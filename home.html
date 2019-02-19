@@ -1,0 +1,129 @@
+<html >
+  <head>
+
+    <title>Trivia Cine </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body bgcolor="#E6E6FA">
+    <div align="center" id="home" class="catsandstars">
+    <br>
+    <br>
+    <div class="container">
+
+
+    <center><h1 class="h1">¿Cuál es tu nombre? </h1></center>
+    <br>
+    <br>
+        <input type="text" id="name" value="" >
+        <br>
+        <br>
+        <form >
+        <center><input type="button" class="btn" onclick="ingresar()" class="ingresar" value="Ingresar" /></center>
+        <br>
+        <br>
+        <img src="imagen/cine3.png" width="320" height="320">
+        </form>
+        </div>
+    </div>
+
+    <div id="index"class="container">
+      <font color="black" face="comic Sans MS, arial">
+      <center><h1 class="h1">Bienvenid@</h1></center>
+      <center><p id="name1" class="p2" value="" ></p><center>
+      <center><p class="p">Elige un Genero </p><center>
+      <br>
+      <form>
+        <input type="button" class ="btn" onclick ="tema1()" value= "Terror" />
+        <input type="button" class ="btn" onclick ="tema2()" value= "Comedia" />
+
+      </form>
+      <center><img src="imagen/cine.png"width="420" height="300"> </center>
+    </div>
+
+    <div id="terror" class="" align=center>
+      <font color="#E74C3C" face="comic Sans MS, arial">
+        <center><h1>Trivia de Terror</h1></center>
+        <center><p><strong>1- La famosa frase "I see dead people" (Yo veo gente muerta) ¿De qué película es?</strong></p> </center>
+         <center><img src="imagen/sexto_sentido.gif"width="160" height="110"> </center>
+
+        <p><input type="radio" name="1" value="a" >a)El exorcista </p>
+        <p><input type="radio" name="1" value="b" >b)Sexto sentido </p>
+        <p><input type="radio" name="1" value="c" >c)El Resplandor </p>
+        <p><input type="radio" name="1" value="d" >d)El aro </p>
+        <br>
+        <center><p><strong>2-¿Cuántas películas de la saga "Actividad Paranormal" hay hasta la fecha?</strong>  </p> </center>
+         <center><img src="imagen/actividad.gif"width="160" height="110"> </center>
+
+        <p><input type="radio" name="2" value="a" >a)6 </p>
+        <p><input type="radio" name="2" value="b" >b)5 </p>
+        <p><input type="radio" name="2" value="c" >c)7 </p>
+        <p><input type="radio" name="2" value="d" >d)2</p>
+        <br>
+
+        <center><p><strong>2-¿Cómo se llama la niña del Aro?</strong>  </p> </center>
+
+        <center><img src="imagen/el_aro.gif"height="160" width="110"> </center>
+        <p><input type="radio" name="3" value="a" >a)Rachel  </p>
+        <p><input type="radio" name="3" value="b" >b)Samantha </p>
+        <p><input type="radio" name="3" value="c" >c)Rose </p>
+        <p><input type="radio" name="3" value="d" >d)Samara</p>
+
+        <center><input type="button" class ="btn" onclick ="comprobarRadio1(respuestacorrecta1)" value= "Ver Resultado" /></center>
+    </div>
+
+    <div id="comedia" class="">
+      <center><h1 class="">Trivia de Comedia</h1></center>
+      <center><p>1-¿De donde nace la idea de hacer la pelicula "La mascara"?  </p> </center>
+      <center><img src="imagen/lamascara.gif"width="320" height="220"> </center>
+      <form class="">
+        <center>
+      <p><input type="radio" name="1" value="a" >a.De un comic</p>
+      <p><input type="radio" name="1" value="b" >b.De una novela </p>
+      <p><input type="radio" name="1" value="c" >c.De la productora </p>
+      <p><input type="radio" name="1" value="d" >d.De Jim Carrey </p> </center>
+      </form>
+      <br>
+      <center><p>2-¿Cuál película ve Drew Barrymore todos los días en "Como si fuera la primera vez"?  </p> </center>
+      <center><img src="imagen/comosifuera.gif"width="320" height="220"> </center>
+      <form class="">
+        <center>
+      <p><input type="radio" name="2" value="a" >a.Son como niños </p>
+      <p><input type="radio" name="2" value="b" >b.The sixth Sense </p>
+      <p><input type="radio" name="2" value="c" >c.Moulin Rouge </p>
+      <p><input type="radio" name="2" value="d" >d.Orbita</p> </center>
+      </form>
+      <br>
+      <center><p>3-¿Cómo se llaman los dos hombres que hacen parte del triángulo amoroso en Bridget Jones Diary?  </p> </center>
+      <center><img src="imagen/bridget.gif"width="320" height="220"> </center>
+      <form>
+        <center>
+      <p><input type="radio" name="3" value="a" >a)Zack Efron y Mark Darcy  </p>
+      <p><input type="radio" name="3" value="b" >b)Jhonny Depp y Daniel Cleaver </p>
+      <p><input type="radio" name="3" value="c">c)Daniel Cleaver y Mark Darcy </p>
+      <p><input type="radio" name="3" value="d" >d)Daniel Radcliffe y Leonardo Di caprio</p>
+      </form>
+
+      <center><input type="button" class ="btn" onclick ="comprobarRadio2(respuestacorrecta2)" value= "Ver Resultado" /></center>
+
+    </div>
+
+
+      <div id="score" class="container">
+        <center><h1 class="h1">Resultado de la Trivia </h1></center>
+          <center><div id="solucion"></div></center>
+          <br>
+          <br>
+          <center><input type="button" class ="btn" onclick ="volver()" value= "Volver a Jugar" /></center>
+          <br>
+          <br>
+          <center><img src="imagen/film.png"width="450" height="320"> </center>
+    </div>
+
+      <script type="text/javascript" src="app.js"></script>
+
+  </body>
+
+
+
+</html>
